@@ -13,12 +13,12 @@ const calculateBMI = (event) => {
 	else {
 		let bmi = (weight / (height * height)).toFixed(2);
 
-		if (bmi < 18.6) result.innerHTML = `Under Weight : <span>${bmi}</span>`;
+		if (bmi < 18.6) result.innerHTML = `Under Weight : <span>${bmi}(BMI)</span>`;
 
 		else if (bmi >= 18.6 && bmi < 24.9)
-			result.innerHTML = `Normal : <span>${bmi}</span>`;
+			result.innerHTML = `Normal : <span>${bmi}(BMI)</span>`;
 
-		else result.innerHTML = `Over Weight : <span>${bmi}</span>`;
+		else result.innerHTML = `Over Weight : <span>${bmi}(BMI)</span>`;
 	}
 };
 
